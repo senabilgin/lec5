@@ -29,6 +29,6 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      //cheking if revert the cahnges work
+        
     }
 }
