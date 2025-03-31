@@ -16,8 +16,8 @@ public class Ball : MonoBehaviour
         Debug.Log("This is the first script.");
 
         Vector3 scale = transform.localScale;
-        scale.x = 2;
-        scale.y = 2;
+        scale.x = 1f;
+        scale.y = 1f;
         transform.localScale = scale;
 
         rb2d.AddForce(new Vector2(Random.Range(0, Mathf.Cos(1)), Random.Range(3, 5 )), ForceMode2D.Impulse);
@@ -25,7 +25,7 @@ public class Ball : MonoBehaviour
         //rb2d.AddForce(new Vector2(Random.Range()), ForceMode2D.Impulse);
 
         
-
+        Destroy(gameObject, 10f);
     }
 
     // Update is called once per frame
